@@ -70,12 +70,13 @@ def get_access_token():
 
 def get_daily_love():
     # 每日一句情话
-    url = "https://api.lovelive.tools/api/SweetNothings/Serialization/Json"
-    r = requests.get(url)
-    all_dict = json.loads(r.text)
-    sentence = all_dict['returnObj'][0]
-    daily_love = sentence
-    return daily_love
+    # url = "https://api.lovelive.tools/api/SweetNothings/Serialization/Json"
+    # r = requests.get(url)
+    # all_dict = json.loads(r.text)
+    # sentence = all_dict['returnObj'][0]
+    # daily_love = sentence
+    # return daily_love
+    return "感谢你的陪伴"
 
 
 def send_weather(access_token, weather):
