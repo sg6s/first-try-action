@@ -1,4 +1,8 @@
-# 安装依赖 pip3 install requests html5lib bs4 schedule
+# 安装依赖 pip3 install requests html5lib bs4 schedule python-dotenv
+
+from dotenv import load_dotenv
+load_dotenv()  # 这会从同目录下的.env文件加载环境变量
+
 import os
 import requests
 import json
@@ -131,4 +135,4 @@ def weather_report(this_city):
 
 
 if __name__ == '__main__':
-    weather_report("淄博")
+    weather_report("马鞍山")
